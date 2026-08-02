@@ -49,7 +49,7 @@ export default function Hero() {
             style={{ animationDelay: '0.4s', opacity: 0 }}
           >
             Создаю вертикальные видео, которые останавливают скролл. Reels,
-            Shorts и TikTok, которые цепляют внимание и держат его до конца.
+            Shorts и TikTok, которые цепляют внимание и держат его до конца
           </p>
 
           <p

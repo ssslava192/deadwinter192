@@ -97,7 +97,7 @@ export default function Work() {
             02 — Работы
           </p>
           <h2 className="text-5xl md:text-6xl font-bold mb-8 leading-tight font-steelfish">
-            Созвездие <span className="text-gradient-ice">вертикальных хитов</span>.
+            Примеры <span className="text-gradient-ice">видео</span>
           </h2>
         </div>
 

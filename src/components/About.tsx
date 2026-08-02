@@ -19,7 +19,7 @@ export default function About() {
             </p>
             <h2 className="text-5xl md:text-6xl font-bold mb-8 leading-tight font-steelfish">
               Создаю <span className="text-gradient-ice">вертикальные</span> видео,
-              которые вирусятся.
+              которые вирусятся
             </h2>
             <div className="space-y-4 text-slate-400 leading-relaxed font-sf-italic">
               <p>

@@ -49,7 +49,7 @@ export default function Testimonials() {
             03 — Отзывы
           </p>
           <h2 className="text-5xl md:text-6xl font-bold mb-8 leading-tight font-steelfish">
-            Что говорят <span className="text-gradient-ice">клиенты</span>.
+            Отзывы <span className="text-gradient-ice">клиентов</span>
           </h2>
         </div>
 
