@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Send, Check, MessageCircle } from 'lucide-react';
+import { Send, Check } from 'lucide-react';
 
 export default function Contact() {
   const [form, setForm] = useState({ name: '', message: '' });
@@ -41,15 +41,7 @@ export default function Contact() {
               <span className="text-red-400 font-semibold not-italic">РЕЗУЛЬТАТ</span>? Пишите мне, обсудим вашу задачу.
             </p>
 
-            <a
-              href="https://t.me/deadwinter192"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 px-6 py-3 border border-white/20 text-white hover:border-red-500/50 hover:text-red-400 transition-all duration-300 group"
-            >
-              <MessageCircle size={18} className="text-red-500/60 group-hover:text-red-400" />
-              <span className="font-steelfish text-sm tracking-wide">@deadwinter192</span>
-            </a>
+
           </div>
 
           {/* Right: form */}
