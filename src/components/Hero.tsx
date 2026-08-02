@@ -1,4 +1,62 @@
+import { useEffect, useRef } from 'react';
 import { ChevronDown } from 'lucide-react';
+
+function HeroStars() {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    let animFrame: number;
+
+    const resize = () => {
+      canvas.width = canvas.offsetWidth;
+      canvas.height = canvas.offsetHeight;
+    };
+    resize();
+    window.addEventListener('resize', resize);
+
+    const stars = Array.from({ length: 180 }, () => ({
+      x: Math.random(),
+      y: Math.random(),
+      r: Math.random() * 1.1 + 0.15,
+      phase: Math.random() * Math.PI * 2,
+      speed: Math.random() * 0.006 + 0.002,
+      tint: Math.random() > 0.75,
+    }));
+
+    const draw = (t: number) => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for (const s of stars) {
+        const a = 0.15 + 0.85 * Math.abs(Math.sin(t * s.speed + s.phase));
+        ctx.beginPath();
+        ctx.arc(s.x * canvas.width, s.y * canvas.height, s.r, 0, Math.PI * 2);
+        ctx.fillStyle = s.tint
+          ? `rgba(248,113,113,${a * 0.55})`
+          : `rgba(255,255,255,${a * 0.75})`;
+        ctx.fill();
+      }
+      animFrame = requestAnimationFrame(draw);
+    };
+
+    animFrame = requestAnimationFrame(draw);
+    return () => {
+      cancelAnimationFrame(animFrame);
+      window.removeEventListener('resize', resize);
+    };
+  }, []);
+
+  return (
+    <canvas
+      ref={canvasRef}
+      className="absolute inset-0 w-full h-full pointer-events-none"
+      style={{ zIndex: 2 }}
+    />
+  );
+}
 
 export default function Hero() {
   return (
@@ -16,12 +74,16 @@ export default function Hero() {
 
       {/* Gradient overlays */}
       <div className="absolute inset-0 z-1 bg-gradient-to-r from-black via-black/70 to-transparent" />
-      <div className="absolute inset-0 z-1 bg-gradient-to-t from-black via-transparent to-black/40" />
+      <div className="absolute inset-0 z-1 bg-gradient-to-t from-black via-black/20 to-black/40" />
+
+      {/* Stars layer over the moon image */}
+      <HeroStars />
 
       {/* Scanline subtle effect */}
       <div
-        className="absolute inset-0 z-1 pointer-events-none"
+        className="absolute inset-0 pointer-events-none"
         style={{
+          zIndex: 3,
           backgroundImage:
             'repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.03) 2px, rgba(0,0,0,0.03) 4px)',
         }}
@@ -90,9 +152,19 @@ export default function Hero() {
 
       {/* Corner coordinates decoration */}
       <div className="absolute bottom-8 right-8 z-10 font-sf-italic text-xs text-slate-600 hidden md:block">
-        <p>55.7558° N</p>
-        <p>37.6176° E</p>
+        <p>52.6768° N</p>
+        <p>31.0192° E</p>
       </div>
+
+      {/* Strong bottom fade — dissolves hero into next section */}
+      <div
+        className="absolute bottom-0 left-0 right-0 pointer-events-none"
+        style={{
+          zIndex: 9,
+          height: '220px',
+          background: 'linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0.92) 70%, #000 100%)',
+        }}
+      />
     </section>
   );
 }
