@@ -1,4 +1,4 @@
-import { Quote } from 'lucide-react';
+import { Quote, User } from 'lucide-react';
 
 const testimonials = [
   {
@@ -6,42 +6,36 @@ const testimonials = [
     role: 'Лайфстайл-креатор',
     handle: '@annalive',
     text: 'Вовлечённость на моих Reels выросла втрое после работы с deadwinter. Ритм, переходы, хук — всё просто попадает. Подписчики постоянно спрашивают, кто монтирует мои видео.',
-    avatar: 'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=200',
   },
   {
     name: 'Макс Соколов',
     role: 'Фитнес-тренер',
     handle: '@maxfit',
     text: 'Принёс сырые съёмки из зала — получил TikTok, который набил 1.2M просмотров за неделю. deadwinter понимает алгоритм лучше всех, с кем я работал.',
-    avatar: 'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=200',
   },
   {
     name: 'Лина Чен',
     role: 'Бренд косметики',
     handle: '@linaskin',
     text: 'Наши продуктовые Reels никогда не выглядели так круто. Чистые каты, идеальный тайминг с музыкой, текстовые оверлеи реально конвертили. Продажи взлетели на 40% за неделю.',
-    avatar: 'https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=200',
   },
   {
     name: 'Дмитрий Волков',
     role: 'Тревел-блогер',
     handle: '@dimatravels',
     text: 'Три Shorts, все — больше 500K просмотров. Спид-рампы и цветокоррек сделали мои тревел-съёмки кинематографичными в вертикали. Стоит каждого рубля.',
-    avatar: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=200',
   },
   {
     name: 'Сара Ким',
     role: 'Фуд-креатор',
     handle: '@saraeats',
     text: 'ASMR-переходы на моих фуд-TikTok — просто нереальные. deadwinter нашёл звуки и каты, до которых я бы сама не додумалась. Процент сохранений взлетел до небес.',
-    avatar: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=200',
   },
   {
     name: 'Игорь Новак',
     role: 'Фэшн-бренд',
     handle: '@novakwear',
     text: 'Наши фэшн Shorts требовали матч-катов на бит — deadwinter доставил. Бренд наконец выглядит премиально в вертикали. И быстрая сдача — 24 часа.',
-    avatar: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=200',
   },
 ];
 
@@ -75,12 +69,9 @@ export default function Testimonials() {
                 «{t.text}»
               </p>
               <div className="flex items-center gap-3 pt-4 border-t border-white/5">
-                <img
-                  src={t.avatar}
-                  alt={t.name}
-                  loading="lazy"
-                  className="w-10 h-10 rounded-full object-cover border border-white/10"
-                />
+                <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center">
+                  <User size={18} className="text-slate-400" />
+                </div>
                 <div>
                   <p className="text-white text-sm font-steelfish tracking-wide">{t.name}</p>
                   <p className="text-slate-500 text-xs font-sf-italic">
