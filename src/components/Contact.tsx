@@ -36,9 +36,9 @@ export default function Contact() {
               <br />
               что-то <span className="text-gradient-ice">звёздное</span>.
             </h2>
-            <p className="text-lg text-white/90 leading-relaxed mb-8 max-w-md">
-              Хочешь <span className="text-red-400 font-semibold">КОНТЕНТ</span>, который приносит{' '}
-              <span className="text-red-400 font-semibold">РЕЗУЛЬТАТ</span>? Пишите мне, обсудим вашу задачу.
+            <p className="text-slate-400 leading-relaxed mb-8 max-w-md font-sf-italic">
+              Хочешь <span className="text-red-400 font-semibold not-italic">КОНТЕНТ</span>, который приносит{' '}
+              <span className="text-red-400 font-semibold not-italic">РЕЗУЛЬТАТ</span>? Пишите мне, обсудим вашу задачу.
             </p>
 
             <a
