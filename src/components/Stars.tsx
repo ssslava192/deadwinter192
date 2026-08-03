@@ -40,12 +40,12 @@ export default function Stars() {
     resize();
     window.addEventListener('resize', resize);
 
-    const stars = Array.from({ length: 220 }, () => ({
+    const stars = Array.from({ length: 90 }, () => ({
       x: Math.random() * window.innerWidth,
       y: Math.random() * window.innerHeight,
       r: Math.random() * 1.2 + 0.2,
       alpha: Math.random(),
-      speed: Math.random() * 0.008 + 0.002,
+      speed: Math.random() * 0.003 + 0.0008,
       phase: Math.random() * Math.PI * 2,
       tint: Math.random() > 0.7,
     }));

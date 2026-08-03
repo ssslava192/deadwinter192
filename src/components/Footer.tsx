@@ -1,7 +1,7 @@
 const socials = [
   { label: 'ТЕЛЕГРАМ КАНАЛ', href: 'https://t.me/deadwinter_space' },
   { label: 'ЮТУБ', href: 'https://www.youtube.com/@deadwinter192' },
-  { label: 'ИНСТАГРАМ', href: 'https://www.instagram.com/deadwinter1922/' },
+  { label: 'ИНСТАГРАМ', href: 'https://www.instagram.com/deadwinter_192/' },
 ];
 
 export default function Footer() {

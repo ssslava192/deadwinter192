@@ -19,12 +19,12 @@ function HeroStars() {
     resize();
     window.addEventListener('resize', resize);
 
-    const stars = Array.from({ length: 180 }, () => ({
+    const stars = Array.from({ length: 70 }, () => ({
       x: Math.random(),
       y: Math.random(),
       r: Math.random() * 1.1 + 0.15,
       phase: Math.random() * Math.PI * 2,
-      speed: Math.random() * 0.006 + 0.002,
+      speed: Math.random() * 0.002 + 0.0006,
       tint: Math.random() > 0.75,
     }));
 
@@ -132,7 +132,9 @@ export default function Hero() {
               Мои работы
             </a>
             <a
-              href="#contact"
+              href="https://t.me/deadwinter192"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-7 py-3 border border-white/20 text-white text-sm font-medium tracking-wide hover:border-red-500/50 hover:text-red-400 transition-all duration-300"
             >
               Связаться
