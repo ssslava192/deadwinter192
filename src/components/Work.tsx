@@ -114,7 +114,7 @@ export default function Work() {
                     : 'border-white/5 hover:border-white/20'
                 }`}
               >
-                <div className="aspect-[9/16] overflow-hidden relative" style={{maxHeight: '280px'}}>
+                <div className="aspect-[9/16] overflow-hidden relative">
                   {isPlaying ? (
                     <video
                       src={p.video}
