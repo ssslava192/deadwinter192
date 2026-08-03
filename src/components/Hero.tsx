@@ -163,8 +163,8 @@ export default function Hero() {
         className="absolute bottom-0 left-0 right-0 pointer-events-none"
         style={{
           zIndex: 9,
-          height: '220px',
-          background: 'linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0.92) 70%, #000 100%)',
+          height: '340px',
+          background: 'linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.35) 25%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.92) 72%, #000 100%)',
         }}
       />
     </section>

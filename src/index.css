@@ -26,6 +26,7 @@
 
   html {
     scroll-behavior: smooth;
+    background-color: #000;
   }
 
   body {
@@ -33,6 +34,12 @@
     font-family: 'SF Pro Display', sans-serif;
     font-weight: 300;
     overflow-x: hidden;
+    background-color: #000;
+  }
+
+  ::selection {
+    background: #000;
+    color: #ef4444;
   }
 }
 

@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import Stars from './components/Stars';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Tagline from './components/Tagline';
 import About from './components/About';
 import Work from './components/Work';
 import Testimonials from './components/Testimonials';
@@ -30,7 +29,6 @@ export default function App() {
       <Navbar />
       <main className="relative z-10">
         <Hero />
-        <Tagline />
         <About />
         <Work />
         <Testimonials />
