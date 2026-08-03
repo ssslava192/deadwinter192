@@ -38,8 +38,13 @@
   }
 
   ::selection {
-    background: #000;
-    color: #ef4444;
+    background: #fff !important;
+    color: #ef4444 !important;
+  }
+
+  *::selection {
+    background: #fff !important;
+    color: #ef4444 !important;
   }
 }
 

@@ -89,10 +89,10 @@ export default function Work() {
   };
 
   return (
-    <section id="work" className="relative py-32 px-6">
+    <section id="work" className="relative py-20 px-6">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="mb-16 reveal">
+        <div className="mb-10 reveal">
           <p className="font-sf-italic text-xs tracking-[0.3em] text-red-500/80 uppercase mb-4">
             02 — Работы
           </p>
@@ -102,7 +102,7 @@ export default function Work() {
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-2 md:gap-3">
           {projects.map((p) => {
             const isPlaying = playingId === p.id;
             return (
@@ -114,7 +114,7 @@ export default function Work() {
                     : 'border-white/5 hover:border-white/20'
                 }`}
               >
-                <div className="aspect-[9/16] overflow-hidden relative">
+                <div className="aspect-[9/16] overflow-hidden relative" style={{maxHeight: '280px'}}>
                   {isPlaying ? (
                     <video
                       src={p.video}
@@ -155,12 +155,7 @@ export default function Work() {
                   </button>
                 </div>
 
-                {/* Info */}
-                <div className="p-3 md:p-4">
-                  <h3 className="text-sm md:text-base font-semibold text-white group-hover:text-red-300 transition-colors duration-300 font-steelfish">
-                    {p.title}
-                  </h3>
-                </div>
+
               </div>
             );
           })}
