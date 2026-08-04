@@ -1,9 +1,9 @@
 import { Film, Zap, TrendingUp, Eye } from 'lucide-react';
 
 const stats = [
-  { icon: Film, value: '300+', label: 'Reels смонтировано' },
-  { icon: Eye, value: '12M+', label: 'Всего просмотров' },
-  { icon: TrendingUp, value: '50+', label: 'Креаторов сотрудничали' },
+  { icon: Film, value: '300+', label: 'ВИДЕО СМОНТИРОВАНО' },
+  { icon: Eye, value: '10М+', label: 'Всего просмотров' },
+  { icon: TrendingUp, value: '50+', label: 'Клиентов сотрудничали' },
   { icon: Zap, value: '24ч', label: 'Средняя сдача' },
 ];
 
@@ -23,11 +23,10 @@ export default function About() {
             </h2>
             <div className="space-y-4 text-slate-400 leading-relaxed font-sf-italic">
               <p>
-                Я видеомонтажёр, специализируюсь исключительно на коротких
-                вертикальных форматах — Reels, Shorts и TikTok. Мой фокус узкий:
-                я делаю видео, которые останавливают скролл.
+                Я Вячеслав — видеомонтажер, создающий динамичный и трендовый
+                монтаж для ТВОИХ Shorts, Reels и TikTok, который достигает ЦЕЛЕЙ
+                и вызывает ЭМОЦИИ у зрителей.
               </p>
-
             </div>
           </div>
 
