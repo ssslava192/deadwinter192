@@ -1,41 +1,29 @@
-import { Quote, User } from 'lucide-react';
+import { Quote } from 'lucide-react';
 
 const testimonials = [
   {
-    name: 'Анна Петрова',
-    role: 'Лайфстайл-креатор',
-    handle: '@annalive',
-    text: 'Вовлечённость на моих Reels выросла втрое после работы с deadwinter. Ритм, переходы, хук — всё просто попадает. Подписчики постоянно спрашивают, кто монтирует мои видео.',
+    role: 'Предприниматель',
+    text: 'Очень понравилось как сделали монтаж видео, превзошел мои ожидания, а я клиент еще тот придирчивый) Большое спасибо за работу, однозначно рекомендую!',
   },
   {
-    name: 'Макс Соколов',
-    role: 'Фитнес-тренер',
-    handle: '@maxfit',
-    text: 'Принёс сырые съёмки из зала — получил TikTok, который набил 1.2M просмотров за неделю. deadwinter понимает алгоритм лучше всех, с кем я работал.',
+    role: 'Криптотрейдер',
+    text: 'Вячеслав максимально быстро смонтировал мне интересный Reels! Очень порадовало, что он отвечает моментально — ничего не пришлось ждать. Всё сделал чётко, качественно и с отличным результатом. Рекомендую всем.',
   },
   {
-    name: 'Лина Чен',
-    role: 'Бренд косметики',
-    handle: '@linaskin',
-    text: 'Наши продуктовые Reels никогда не выглядели так круто. Чистые каты, идеальный тайминг с музыкой, текстовые оверлеи реально конвертили. Продажи взлетели на 40% за неделю.',
+    role: 'Бренд одежды',
+    text: 'Нужно было смонтировать короткие вертикальные видео для социальных сетей на основе референсов, сделать цветокоррекцию и наложить звук. Работа понравилась, ролики были смонтированы очень быстро и качественно.',
   },
   {
-    name: 'Дмитрий Волков',
-    role: 'Тревел-блогер',
-    handle: '@dimatravels',
-    text: 'Три Shorts, все — больше 500K просмотров. Спид-рампы и цветокоррек сделали мои тревел-съёмки кинематографичными в вертикали. Стоит каждого рубля.',
+    role: 'Маркетолог',
+    text: 'Хотел бы поблагодарить Вячеслава за хорошую работу на протяжении длительного периода. Хорошо монтировал, предлагал идеи, оперативно вносил правки и всегда был на связи.',
   },
   {
-    name: 'Сара Ким',
-    role: 'Фуд-креатор',
-    handle: '@saraeats',
-    text: 'ASMR-переходы на моих фуд-TikTok — просто нереальные. deadwinter нашёл звуки и каты, до которых я бы сама не додумалась. Процент сохранений взлетел до небес.',
+    role: 'Риелтор',
+    text: 'Всё сделал даже раньше дедлайна, получилось увидеть то, что именно хотела видеть! Получение обратной связи в любое время суток, очень приятно было работать. Спасибо большое!',
   },
   {
-    name: 'Игорь Новак',
-    role: 'Фэшн-бренд',
-    handle: '@novakwear',
-    text: 'Наши фэшн Shorts требовали матч-катов на бит — deadwinter доставил. Бренд наконец выглядит премиально в вертикали. И быстрая сдача — 24 часа.',
+    role: 'Врач',
+    text: 'Спасибо большое за качественную работу и профессиональный подход! Сделали повторный заказ и все выполненно на высоте! Однозначно рекомендую) Вячеслав, спасибо за ваш подход и ваш взгляд на монтаж роликов для рилсов, очень круто!',
   },
 ];
 
@@ -58,7 +46,7 @@ export default function Testimonials() {
           {testimonials.map((t, i) => (
             <div
               key={i}
-              className="reveal group relative p-6 bg-white/[0.02] border border-white/5 hover:border-white/15 transition-all duration-500"
+              className="reveal group relative p-6 bg-white/[0.02] border border-white/5 hover:border-red-500/50 hover:shadow-[0_0_40px_-10px_rgba(239,68,68,0.4)] transition-all duration-500"
               style={{ transitionDelay: `${i * 50}ms` }}
             >
               <Quote
@@ -68,16 +56,10 @@ export default function Testimonials() {
               <p className="text-slate-300 leading-relaxed mb-6 font-sf-italic text-sm">
                 «{t.text}»
               </p>
-              <div className="flex items-center gap-3 pt-4 border-t border-white/5">
-                <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center">
-                  <User size={18} className="text-slate-400" />
-                </div>
-                <div>
-                  <p className="text-white text-sm font-steelfish tracking-wide">{t.name}</p>
-                  <p className="text-slate-500 text-xs font-sf-italic">
-                    {t.role} · {t.handle}
-                  </p>
-                </div>
+              <div className="pt-4 border-t border-white/5">
+                <p className="text-white text-sm font-steelfish tracking-wide">
+                  — {t.role}
+                </p>
               </div>
             </div>
           ))}
