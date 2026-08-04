@@ -23,7 +23,7 @@ const testimonials = [
   },
   {
     role: 'Врач',
-    text: 'Спасибо большое за качественную работу и профессиональный подход! Сделали повторный заказ и все выполненно на высоте! Однозначно рекомендую) Вячеслав, спасибо за ваш подход и ваш взгляд на монтаж роликов для рилсов, очень круто!',
+    text: 'Спасибо большое за качественную работу и профессиональный подход! Однозначно рекомендую) Вячеслав, спасибо за ваш подход и ваш взгляд на монтаж роликов для рилсов, очень круто!',
   },
 ];
 
@@ -46,19 +46,23 @@ export default function Testimonials() {
           {testimonials.map((t, i) => (
             <div
               key={i}
-              className="reveal group relative p-6 bg-white/[0.02] border border-white/5 hover:border-red-500/50 hover:shadow-[0_0_40px_-10px_rgba(239,68,68,0.4)] transition-all duration-500"
+              className="reveal group relative p-8 bg-white/[0.02] border border-white/5 hover:border-red-500/50 hover:shadow-[0_0_40px_-10px_rgba(239,68,68,0.4)] transition-all duration-500 flex flex-col"
               style={{ transitionDelay: `${i * 50}ms` }}
             >
-              <Quote
-                size={28}
-                className="text-red-500/20 mb-4 group-hover:text-red-500/40 transition-colors"
-              />
-              <p className="text-slate-300 leading-relaxed mb-6 font-sf-italic text-sm">
-                «{t.text}»
+              <div className="flex items-center gap-3 mb-5">
+                <div className="w-10 h-10 rounded-full bg-red-500/10 border border-red-500/20 flex items-center justify-center shrink-0 group-hover:bg-red-500/20 group-hover:border-red-500/40 transition-all duration-500">
+                  <Quote size={16} className="text-red-500/50 group-hover:text-red-400 transition-colors" />
+                </div>
+                <div className="h-px flex-1 bg-gradient-to-r from-red-500/30 to-transparent" />
+              </div>
+
+              <p className="text-slate-300 leading-relaxed mb-8 font-sf-italic text-[15px] flex-1">
+                {t.text}
               </p>
-              <div className="pt-4 border-t border-white/5">
-                <p className="text-white text-sm font-steelfish tracking-wide">
-                  — {t.role}
+
+              <div className="pt-5 border-t border-white/5">
+                <p className="text-white text-base font-steelfish tracking-wider uppercase">
+                  {t.role}
                 </p>
               </div>
             </div>
