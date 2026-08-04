@@ -24,7 +24,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-black noise-overlay">
+    <div className="relative min-h-screen bg-black">
       <Stars />
       <Navbar />
       <main className="relative z-10">
