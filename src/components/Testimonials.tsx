@@ -29,10 +29,10 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="relative py-32 px-6">
+    <section id="testimonials" className="relative py-24 px-6">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="mb-16 reveal">
+        <div className="mb-12 reveal">
           <p className="font-sf-italic text-xs tracking-[0.3em] text-red-500/80 uppercase mb-4">
             03 — Отзывы
           </p>
@@ -46,21 +46,21 @@ export default function Testimonials() {
           {testimonials.map((t, i) => (
             <div
               key={i}
-              className="reveal group relative p-8 bg-white/[0.02] border border-white/5 hover:border-red-500/50 hover:shadow-[0_0_40px_-10px_rgba(239,68,68,0.4)] transition-all duration-500 flex flex-col"
+              className="reveal group relative p-6 bg-white/[0.02] border border-white/5 hover:border-red-500/50 hover:shadow-[0_0_40px_-10px_rgba(239,68,68,0.4)] transition-all duration-500 flex flex-col"
               style={{ transitionDelay: `${i * 50}ms` }}
             >
-              <div className="flex items-center gap-3 mb-5">
+              <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-full bg-red-500/10 border border-red-500/20 flex items-center justify-center shrink-0 group-hover:bg-red-500/20 group-hover:border-red-500/40 transition-all duration-500">
                   <Quote size={16} className="text-red-500/50 group-hover:text-red-400 transition-colors" />
                 </div>
                 <div className="h-px flex-1 bg-gradient-to-r from-red-500/30 to-transparent" />
               </div>
 
-              <p className="text-slate-300 leading-relaxed mb-8 font-sf-italic text-[15px] flex-1">
+              <p className="text-slate-300 leading-relaxed mb-5 font-sf-italic text-[15px] flex-1">
                 {t.text}
               </p>
 
-              <div className="pt-5 border-t border-white/5">
+              <div className="pt-4 border-t border-white/5">
                 <p className="text-white text-base font-steelfish tracking-wider uppercase">
                   {t.role}
                 </p>
