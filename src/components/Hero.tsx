@@ -11,6 +11,10 @@ function HeroStars() {
     if (!ctx) return;
 
     let animFrame: number;
+    let running = true;
+
+    const isMobile = window.innerWidth < 768;
+    const starCount = isMobile ? 25 : 70;
 
     const resize = () => {
       canvas.width = canvas.offsetWidth;
@@ -19,7 +23,7 @@ function HeroStars() {
     resize();
     window.addEventListener('resize', resize);
 
-    const stars = Array.from({ length: 70 }, () => ({
+    const stars = Array.from({ length: starCount }, () => ({
       x: Math.random(),
       y: Math.random(),
       r: Math.random() * 1.1 + 0.15,
@@ -29,6 +33,7 @@ function HeroStars() {
     }));
 
     const draw = (t: number) => {
+      if (!running) return;
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       for (const s of stars) {
         const a = 0.15 + 0.85 * Math.abs(Math.sin(t * s.speed + s.phase));
@@ -43,9 +48,19 @@ function HeroStars() {
     };
 
     animFrame = requestAnimationFrame(draw);
+
+    const onVisibility = () => {
+      running = !document.hidden;
+      if (running) animFrame = requestAnimationFrame(draw);
+      else cancelAnimationFrame(animFrame);
+    };
+    document.addEventListener('visibilitychange', onVisibility);
+
     return () => {
+      running = false;
       cancelAnimationFrame(animFrame);
       window.removeEventListener('resize', resize);
+      document.removeEventListener('visibilitychange', onVisibility);
     };
   }, []);
 

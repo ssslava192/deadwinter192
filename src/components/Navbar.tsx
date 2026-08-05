@@ -32,8 +32,8 @@ export default function Navbar() {
           className="flex items-center gap-2 group"
         >
           <img
-            src="/assets/images/белое_лого_большое.png"
-            alt="DEADWINTER logo"
+            src="/rounded-in-photoretrica.png"
+            alt="Вячеслав logo"
             className="h-7 w-auto opacity-80 group-hover:opacity-100 transition-opacity duration-300"
           />
           <span className="font-steelfish text-base tracking-widest text-slate-300 group-hover:text-red-400 transition-colors duration-300 uppercase">

@@ -32,6 +32,10 @@ export default function Stars() {
     if (!ctx) return;
 
     let animFrame: number;
+    let running = true;
+
+    const isMobile = window.innerWidth < 768;
+    const starCount = isMobile ? 30 : 90;
 
     const resize = () => {
       canvas.width = window.innerWidth;
@@ -40,7 +44,7 @@ export default function Stars() {
     resize();
     window.addEventListener('resize', resize);
 
-    const stars = Array.from({ length: 90 }, () => ({
+    const stars = Array.from({ length: starCount }, () => ({
       x: Math.random() * window.innerWidth,
       y: Math.random() * window.innerHeight,
       r: Math.random() * 1.2 + 0.2,
@@ -51,6 +55,7 @@ export default function Stars() {
     }));
 
     const draw = (t: number) => {
+      if (!running) return;
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       for (const s of stars) {
         const a = 0.2 + 0.8 * Math.abs(Math.sin(t * s.speed + s.phase));
@@ -66,9 +71,18 @@ export default function Stars() {
 
     animFrame = requestAnimationFrame(draw);
 
+    const onVisibility = () => {
+      running = !document.hidden;
+      if (running) animFrame = requestAnimationFrame(draw);
+      else cancelAnimationFrame(animFrame);
+    };
+    document.addEventListener('visibilitychange', onVisibility);
+
     return () => {
+      running = false;
       cancelAnimationFrame(animFrame);
       window.removeEventListener('resize', resize);
+      document.removeEventListener('visibilitychange', onVisibility);
     };
   }, []);
 
@@ -90,33 +104,37 @@ function ParallaxLogos() {
   useEffect(() => {
     const vh = window.innerHeight;
 
+    let ticking = false;
+
     const onScroll = () => {
-      const y = window.scrollY;
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        const y = window.scrollY;
 
-      LOGOS.forEach((logo, i) => {
-        const el = refs.current[i];
-        if (!el) return;
+        LOGOS.forEach((logo, i) => {
+          const el = refs.current[i];
+          if (!el) return;
 
-        // parallax drift
-        const ty = y * logo.parallax;
-        const rot = logo.rotate + y * 0.008 * (logo.parallax / 0.2);
+          const ty = y * logo.parallax;
+          const rot = logo.rotate + y * 0.008 * (logo.parallax / 0.2);
 
-        // fade: fully invisible in hero, ramps in slowly, peaks near screen center
-        const logoCenter = parseFloat(logo.top) * (logo.top.includes('vh') ? vh / 100 : 1);
-        const screenPos = logoCenter - y;
-        const distFromCenter = Math.abs(screenPos - vh / 2);
-        const maxDist = vh * 0.6; // tighter window -> faster fade at edges
-        const visibility = Math.max(0, 1 - distFromCenter / maxDist);
-        const visibilityEase = visibility * visibility; // ease-out: fades harder
+          const logoCenter = parseFloat(logo.top) * (logo.top.includes('vh') ? vh / 100 : 1);
+          const screenPos = logoCenter - y;
+          const distFromCenter = Math.abs(screenPos - vh / 2);
+          const maxDist = vh * 0.6;
+          const visibility = Math.max(0, 1 - distFromCenter / maxDist);
+          const visibilityEase = visibility * visibility;
 
-        // stay invisible until well past the hero, then ease in
-        const heroFade = Math.min(1, Math.max(0, (y - vh * 0.6) / (vh * 0.7)));
-        const heroFadeEase = heroFade * heroFade;
+          const heroFade = Math.min(1, Math.max(0, (y - vh * 0.6) / (vh * 0.7)));
+          const heroFadeEase = heroFade * heroFade;
 
-        const op = logo.baseOpacity * visibilityEase * heroFadeEase;
+          const op = logo.baseOpacity * visibilityEase * heroFadeEase;
 
-        el.style.transform = `translateY(${ty}px) rotate(${rot}deg)`;
-        el.style.opacity = op.toFixed(4);
+          el.style.transform = `translateY(${ty}px) rotate(${rot}deg)`;
+          el.style.opacity = op.toFixed(4);
+        });
+        ticking = false;
       });
     };
 
@@ -144,13 +162,15 @@ function ParallaxLogos() {
             opacity: 0,
             willChange: 'transform, opacity',
             transition: 'opacity 0.4s ease-out',
+            contain: 'layout paint',
           }}
         >
           <img
-            src="/assets/images/белое_лого_большое.png"
+            src="/rounded-in-photoretrica.png"
             alt=""
             className="w-full h-auto select-none"
             draggable={false}
+            loading="lazy"
           />
         </div>
       ))}
