@@ -8,6 +8,29 @@ import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
+function ChromaOverlay() {
+  return (
+    <>
+      <div
+        className="pointer-events-none absolute inset-0 z-30 select-none"
+        style={{
+          backgroundImage:
+            'linear-gradient(105deg, rgba(220,38,38,0.05) 0%, transparent 40%, transparent 60%, rgba(37,99,235,0.05) 100%)',
+          mixBlendMode: 'screen',
+        }}
+      />
+      <div
+        className="pointer-events-none absolute inset-0 z-30 select-none"
+        style={{
+          backgroundImage:
+            'radial-gradient(ellipse at 25% 40%, rgba(220,38,38,0.04) 0%, transparent 55%), radial-gradient(ellipse at 75% 60%, rgba(37,99,235,0.04) 0%, transparent 55%)',
+          mixBlendMode: 'screen',
+        }}
+      />
+    </>
+  );
+}
+
 export default function App() {
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -28,11 +51,18 @@ export default function App() {
       <Stars />
       <Navbar />
       <main className="relative z-10">
-        <Hero />
-        <About />
+        {/* Chromatic aberration over Hero + About + Contact */}
+        <div className="relative">
+          <Hero />
+          <About />
+          <ChromaOverlay />
+        </div>
         <Work />
         <Testimonials />
-        <Contact />
+        <div className="relative">
+          <Contact />
+          <ChromaOverlay />
+        </div>
       </main>
       <Footer />
     </div>
