@@ -32,7 +32,7 @@ export default function Navbar() {
           className="flex items-center gap-2 group"
         >
           <img
-            src="/image.png"
+            src="/assets/images/белое_лого_большое%20copy.png"
             alt="DEADWINTER logo"
             className="h-7 w-auto opacity-80 group-hover:opacity-100 transition-opacity duration-300"
           />
