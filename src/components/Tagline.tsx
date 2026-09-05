@@ -13,7 +13,7 @@ export default function Tagline() {
           а
         </p>
         <h2
-          className="text-[13.5rem] md:text-[24rem] lg:text-[30rem] font-steelfish font-bold leading-none text-gradient-ice tracking-tight reveal"
+          className="text-8xl md:text-[12rem] lg:text-[14rem] font-steelfish font-bold leading-none text-gradient-ice tracking-tight reveal"
           style={{ textShadow: '0 0 40px rgba(220, 38, 38, 0.3)' }}
         >
           КОСМОС

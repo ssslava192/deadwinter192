@@ -96,7 +96,7 @@ export default function Work() {
           <p className="font-sf-italic text-xs tracking-[0.3em] text-red-500/80 uppercase mb-4">
             02 — Работы
           </p>
-          <h2 className="text-[9rem] md:text-[11rem] font-bold mb-8 leading-tight font-steelfish">
+          <h2 className="text-6xl md:text-7xl font-bold mb-8 leading-tight font-steelfish">
             Примеры <span className="text-gradient-ice">видео</span>
           </h2>
         </div>
