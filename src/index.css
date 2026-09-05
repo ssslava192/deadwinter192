@@ -1,17 +1,10 @@
 @import url('https://fonts.cdnfonts.com/css/sf-pro-display');
 
 @font-face {
-  font-family: 'Steelfish';
+  font-family: 'Geniralfont';
   font-style: normal;
   font-weight: 400;
-  src: url('https://fonts.cdnfonts.com/s/8620/steelfish.woff') format('woff');
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Steelfish';
-  font-style: normal;
-  font-weight: 700;
-  src: url('https://fonts.cdnfonts.com/s/8620/steelfish bd.woff') format('woff');
+  src: url('/fonts/Geniralfont-Regular.ttf') format('truetype');
   font-display: swap;
 }
 
@@ -57,9 +50,10 @@
 
 @layer utilities {
   .font-steelfish {
-    font-family: 'Steelfish', sans-serif;
-    font-weight: 700;
+    font-family: 'Geniralfont', sans-serif;
+    font-weight: 400;
     letter-spacing: 0.02em;
+    text-transform: uppercase;
   }
 
   .font-sf-italic {
