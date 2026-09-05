@@ -36,7 +36,7 @@ export default function Navbar() {
             alt="DEADWINTER logo"
             className="h-7 w-auto opacity-80 group-hover:opacity-100 transition-opacity duration-300"
           />
-          <span className="font-steelfish text-base tracking-widest text-slate-300 group-hover:text-red-400 transition-colors duration-300 uppercase">
+          <span className="font-steelfish text-xl tracking-widest text-slate-300 group-hover:text-red-400 transition-colors duration-300 uppercase">
             DEADWINTER
           </span>
         </a>
