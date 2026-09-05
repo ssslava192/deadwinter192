@@ -36,7 +36,7 @@ export default function Testimonials() {
           <p className="font-sf-italic text-xs tracking-[0.3em] text-red-500/80 uppercase mb-4">
             03 — Отзывы
           </p>
-          <h2 className="text-6xl md:text-7xl font-bold mb-8 leading-tight font-steelfish">
+          <h2 className="text-7xl md:text-8xl font-bold mb-8 leading-tight font-steelfish">
             Отзывы <span className="text-gradient-ice">клиентов</span>
           </h2>
         </div>
@@ -61,7 +61,7 @@ export default function Testimonials() {
               </p>
 
               <div className="pt-4 border-t border-white/5">
-                <p className="text-white text-xl font-steelfish tracking-wider uppercase">
+                <p className="text-white text-2xl font-steelfish tracking-wider uppercase">
                   {t.role}
                 </p>
               </div>

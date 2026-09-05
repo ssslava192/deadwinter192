@@ -10,7 +10,7 @@ export default function Contact() {
           04 — Контакты
         </p>
         <h2
-          className="text-6xl md:text-8xl font-bold mb-8 leading-tight font-steelfish reveal"
+          className="text-7xl md:text-9xl font-bold mb-8 leading-tight font-steelfish reveal"
         >
           Давайте создадим
           <br />

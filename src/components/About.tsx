@@ -17,7 +17,7 @@ export default function About() {
             <p className="font-sf-italic text-xs tracking-[0.3em] text-red-500/80 uppercase mb-4">
               01 — Обо мне
             </p>
-            <h2 className="text-6xl md:text-7xl font-bold mb-8 leading-tight font-steelfish">
+            <h2 className="text-7xl md:text-8xl font-bold mb-8 leading-tight font-steelfish">
               <span className="text-gradient-ice">Вячеслав</span>
             </h2>
             <div className="space-y-4 text-slate-400 leading-relaxed font-sf-italic mb-10">
@@ -39,7 +39,7 @@ export default function About() {
                     size={20}
                     className="text-red-500/60 mb-3 group-hover:text-red-400 transition-colors"
                   />
-                  <p className="text-5xl font-bold text-white mb-1 font-steelfish">{s.value}</p>
+                  <p className="text-6xl font-bold text-white mb-1 font-steelfish">{s.value}</p>
                   <p className="font-sf-italic text-xs text-slate-500 uppercase tracking-wider">
                     {s.label}
                   </p>

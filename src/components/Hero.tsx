@@ -115,7 +115,7 @@ export default function Hero() {
           </p>
 
           <h1
-            className="text-7xl md:text-9xl lg:text-[12rem] font-bold leading-none mb-6 animate-fadeInUp font-steelfish"
+            className="text-8xl md:text-[11rem] lg:text-[15rem] font-bold leading-none mb-6 animate-fadeInUp font-steelfish"
             style={{ animationDelay: '0.25s', opacity: 0, letterSpacing: '0.05em' }}
           >
             <span className="text-gradient-ice block">DEADWINTER</span>
