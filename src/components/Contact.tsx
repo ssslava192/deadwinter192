@@ -2,7 +2,7 @@ import { Send } from 'lucide-react';
 
 export default function Contact() {
   return (
-    <section id="contact" className="relative py-32 px-6">
+    <section id="contact" className="relative py-20 px-6">
       <div className="max-w-4xl mx-auto text-center">
         <p
           className="font-sf-italic text-xs tracking-[0.3em] text-red-500/80 uppercase mb-4 reveal"
@@ -10,14 +10,14 @@ export default function Contact() {
           04 — Контакты
         </p>
         <h2
-          className="text-7xl md:text-9xl font-bold mb-8 leading-tight font-steelfish reveal"
+          className="text-8xl md:text-9xl font-bold mb-6 leading-tight font-steelfish reveal"
         >
           Давайте создадим
           <br />
           что-то <span className="text-gradient-ice">звёздное</span>
         </h2>
         <p
-          className="font-sf-italic text-slate-400 leading-relaxed mb-12 max-w-md mx-auto reveal"
+          className="font-sf-italic text-slate-400 leading-relaxed mb-10 max-w-md mx-auto reveal"
         >
           Хочешь <span className="text-red-400 font-semibold not-italic">КОНТЕНТ</span>,
           который приносит <span className="text-red-400 font-semibold not-italic">РЕЗУЛЬТАТ</span>?

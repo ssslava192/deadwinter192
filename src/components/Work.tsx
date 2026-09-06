@@ -89,14 +89,14 @@ export default function Work() {
   };
 
   return (
-    <section id="work" className="relative py-20 px-6">
+    <section id="work" className="relative py-16 px-6">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
-        <div className="mb-10 reveal">
+        <div className="mb-8 reveal">
           <p className="font-sf-italic text-xs tracking-[0.3em] text-red-500/80 uppercase mb-4">
             02 — Работы
           </p>
-          <h2 className="text-7xl md:text-8xl font-bold mb-8 leading-tight font-steelfish">
+          <h2 className="text-8xl md:text-9xl font-bold mb-6 leading-tight font-steelfish">
             Примеры <span className="text-gradient-ice">видео</span>
           </h2>
         </div>

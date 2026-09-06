@@ -9,18 +9,18 @@ const stats = [
 
 export default function About() {
   return (
-    <section id="about" className="relative py-32 px-6">
+    <section id="about" className="relative py-20 px-6">
       <div className="max-w-5xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Left: Text + Stats */}
           <div className="reveal">
             <p className="font-sf-italic text-xs tracking-[0.3em] text-red-500/80 uppercase mb-4">
               01 — Обо мне
             </p>
-            <h2 className="text-7xl md:text-8xl font-bold mb-8 leading-tight font-steelfish">
+            <h2 className="text-8xl md:text-9xl font-bold mb-6 leading-tight font-steelfish">
               <span className="text-gradient-ice">Вячеслав</span>
             </h2>
-            <div className="space-y-4 text-slate-400 leading-relaxed font-sf-italic mb-10">
+            <div className="space-y-4 text-slate-400 leading-relaxed font-sf-italic mb-8">
               <p>
                 Видеомонтажер, создающий динамичный и трендовый
                 монтаж для ТВОИХ Shorts, Reels и TikTok, который достигает ЦЕЛЕЙ
@@ -49,7 +49,7 @@ export default function About() {
           </div>
 
           {/* Right: Photo */}
-          <div className="reveal flex justify-center md:justify-end">
+          <div className="reveal flex justify-center">
             <div className="relative w-72 md:w-80">
               {/* Glow behind */}
               <div className="absolute inset-0 bg-red-500/10 blur-3xl rounded-full scale-110 pointer-events-none" />
