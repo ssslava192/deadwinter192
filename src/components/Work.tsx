@@ -90,7 +90,7 @@ export default function Work() {
 
   return (
     <section id="work" className="relative py-20 px-6">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="mb-10 reveal">
           <p className="font-sf-italic text-xs tracking-[0.3em] text-red-500/80 uppercase mb-4">

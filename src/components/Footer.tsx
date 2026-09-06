@@ -15,7 +15,7 @@ export default function Footer() {
             'linear-gradient(to right, transparent 0%, rgba(255,255,255,0.12) 50%, transparent 100%)',
         }}
       />
-      <div className="max-w-6xl mx-auto flex flex-col items-center gap-6">
+      <div className="max-w-5xl mx-auto flex flex-col items-center gap-6">
         <div className="flex flex-wrap justify-center gap-6">
           {socials.map((s) => (
             <a

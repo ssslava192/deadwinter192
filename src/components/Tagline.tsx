@@ -1,7 +1,7 @@
 export default function Tagline() {
   return (
     <section className="relative py-20 md:py-32 px-6 overflow-hidden">
-      <div className="max-w-6xl mx-auto text-center">
+      <div className="max-w-5xl mx-auto text-center">
         <p
           className="font-sf-italic text-base md:text-xl text-slate-400 tracking-[0.15em] uppercase mb-4 reveal"
         >
