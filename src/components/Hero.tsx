@@ -129,13 +129,6 @@ export default function Hero() {
             Shorts и TikTok, которые цепляют внимание и держат его до конца
           </p>
 
-          <p
-            className="font-sf-italic text-sm md:text-base text-red-500/70 tracking-[0.2em] uppercase mb-10 animate-fadeInUp"
-            style={{ animationDelay: '0.5s', opacity: 0 }}
-          >
-            Не монтаж — а космос
-          </p>
-
           <div
             className="flex flex-wrap gap-4 animate-fadeInUp"
             style={{ animationDelay: '0.55s', opacity: 0 }}
@@ -163,6 +156,9 @@ export default function Hero() {
         href="#about"
         className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-slate-500 hover:text-slate-300 transition-colors animate-float"
       >
+        <span className="font-sf-italic text-sm md:text-base text-red-500/70 tracking-[0.2em] uppercase">
+          Не монтаж — а космос
+        </span>
         <span className="font-sf-italic text-xs tracking-widest uppercase">Листай</span>
         <ChevronDown size={16} />
       </a>
