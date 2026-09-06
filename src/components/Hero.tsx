@@ -105,7 +105,7 @@ export default function Hero() {
       />
 
       {/* Content */}
-      <div className="relative z-10 max-w-5xl mx-auto px-6 w-full">
+      <div className="relative z-10 max-w-5xl mx-auto w-full">
         <div className="max-w-2xl">
           <p
             className="font-sf-italic text-sm tracking-[0.25em] text-red-500/80 uppercase mb-6 animate-fadeInUp"
