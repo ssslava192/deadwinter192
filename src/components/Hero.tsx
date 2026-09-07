@@ -111,7 +111,7 @@ export default function Hero() {
             className="font-sf-italic text-sm tracking-[0.25em] text-red-500/80 uppercase mb-6 animate-fadeInUp"
             style={{ animationDelay: '0.1s', opacity: 0 }}
           >
-            Reels · Shorts · TikTok
+            Reels   Shorts   TikTok
           </p>
 
           <h1
