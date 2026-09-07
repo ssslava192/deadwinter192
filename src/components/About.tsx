@@ -1,26 +1,26 @@
 import { Film, Zap, TrendingUp, Eye } from 'lucide-react';
 
 const stats = [
-  { icon: Film, value: '300+', label: 'ВИДЕО СМОНТИРОВАНО' },
+  { icon: Film, value: '500+', label: 'ВИДЕО СМОНТИРОВАНО' },
   { icon: Eye, value: '10М+', label: 'Всего просмотров' },
-  { icon: TrendingUp, value: '50+', label: 'Клиентов сотрудничали' },
+  { icon: TrendingUp, value: '100+', label: 'Клиентов сотрудничали' },
   { icon: Zap, value: '24ч', label: 'Средняя сдача' },
 ];
 
 export default function About() {
   return (
-    <section id="about" className="relative py-20 px-6">
+    <section id="about" className="relative py-16 px-6">
       <div className="max-w-5xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-8 items-center">
+        <div className="grid md:grid-cols-2 gap-6 items-center">
           {/* Left: Text + Stats */}
           <div className="reveal">
             <p className="font-sf-italic text-xs tracking-[0.3em] text-red-500/80 uppercase mb-4">
               01 — Обо мне
             </p>
-            <h2 className="text-8xl md:text-9xl font-bold mb-6 leading-tight font-steelfish">
+            <h2 className="text-8xl md:text-9xl font-bold mb-4 leading-tight font-steelfish">
               <span className="text-gradient-ice">Вячеслав</span>
             </h2>
-            <div className="space-y-4 text-slate-400 leading-relaxed font-sf-italic mb-8">
+            <div className="space-y-4 text-slate-400 leading-relaxed font-sf-italic mb-6">
               <p>
                 Видеомонтажер, создающий динамичный и трендовый
                 монтаж для ТВОИХ Shorts, Reels и TikTok, который достигает ЦЕЛЕЙ

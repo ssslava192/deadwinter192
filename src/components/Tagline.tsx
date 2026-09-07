@@ -1,6 +1,6 @@
 export default function Tagline() {
   return (
-    <section className="relative py-16 md:py-24 px-6 overflow-hidden">
+    <section className="relative py-12 md:py-20 px-6 overflow-hidden">
       <div className="max-w-5xl mx-auto text-center">
         <p
           className="font-sf-italic text-base md:text-xl text-slate-400 tracking-[0.15em] uppercase mb-4 reveal"
@@ -18,7 +18,7 @@ export default function Tagline() {
         >
           КОСМОС
         </h2>
-        <div className="mt-8 flex items-center justify-center gap-4 reveal">
+        <div className="mt-6 flex items-center justify-center gap-4 reveal">
           <span className="h-px w-12 bg-gradient-to-r from-transparent to-red-500/50" />
           <span className="font-sf-italic text-xs text-red-500/60 tracking-[0.3em] uppercase">
             deadwinter

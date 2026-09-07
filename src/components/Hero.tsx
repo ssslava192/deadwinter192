@@ -154,7 +154,7 @@ export default function Hero() {
       {/* Scroll indicator */}
       <a
         href="#about"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-slate-500 hover:text-slate-300 transition-colors animate-float"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 w-max max-w-[calc(100%-2rem)] text-center flex flex-col items-center gap-2 text-slate-500 hover:text-slate-300 transition-colors animate-float"
       >
         <span className="font-sf-italic text-sm md:text-base text-red-500/70 tracking-[0.2em] uppercase">
           Не монтаж — а космос

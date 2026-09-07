@@ -29,20 +29,20 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="relative py-16 px-6">
+    <section id="testimonials" className="relative py-12 px-6">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
-        <div className="mb-8 reveal">
+        <div className="mb-6 reveal">
           <p className="font-sf-italic text-xs tracking-[0.3em] text-red-500/80 uppercase mb-4">
             03 — Отзывы
           </p>
-          <h2 className="text-8xl md:text-9xl font-bold mb-6 leading-tight font-steelfish">
+          <h2 className="text-8xl md:text-9xl font-bold mb-4 leading-tight font-steelfish">
             Отзывы <span className="text-gradient-ice">клиентов</span>
           </h2>
         </div>
 
         {/* Testimonials grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {testimonials.map((t, i) => (
             <div
               key={i}
