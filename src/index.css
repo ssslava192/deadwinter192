@@ -39,12 +39,12 @@
 
   ::selection {
     background: #fff !important;
-    color: #ef4444 !important;
+    color: #ff1a1a !important;
   }
 
   *::selection {
     background: #fff !important;
-    color: #ef4444 !important;
+    color: #ff1a1a !important;
   }
 }
 
@@ -70,14 +70,14 @@
   }
 
   .text-gradient-ice {
-    background: linear-gradient(135deg, #ffffff 0%, #f87171 30%, #dc2626 70%, #991b1b 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #ff4545 30%, #ff1a1a 70%, #b30000 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   .glow-blue {
-    box-shadow: 0 0 30px rgba(220, 38, 38, 0.2), 0 0 60px rgba(220, 38, 38, 0.08);
+    box-shadow: 0 0 30px rgba(255, 26, 26, 0.2), 0 0 60px rgba(255, 26, 26, 0.08);
   }
 
   .glow-white {
@@ -131,8 +131,8 @@
 }
 
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 10px rgba(220, 38, 38, 0.25); }
-  50% { box-shadow: 0 0 30px rgba(220, 38, 38, 0.6), 0 0 60px rgba(220, 38, 38, 0.25); }
+  0%, 100% { box-shadow: 0 0 10px rgba(255, 26, 26, 0.25); }
+  50% { box-shadow: 0 0 30px rgba(255, 26, 26, 0.6), 0 0 60px rgba(255, 26, 26, 0.25); }
 }
 
 @keyframes orbit {
@@ -188,7 +188,7 @@
   left: 0;
   width: 0;
   height: 1px;
-  background: #dc2626;
+  background: #ff1a1a;
   transition: width 0.3s ease;
 }
 .nav-link:hover::after {

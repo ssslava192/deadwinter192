@@ -29,7 +29,7 @@ export default function About() {
             </div>
 
             {/* Stats grid */}
-            <div className="grid grid-cols-2 gap-px bg-white/5 border border-white/5">
+            <div className="grid grid-cols-2 gap-px bg-white/5 border border-white/5 w-full max-w-[calc(100%-2rem)]">
               {stats.map((s) => (
                 <div
                   key={s.label}

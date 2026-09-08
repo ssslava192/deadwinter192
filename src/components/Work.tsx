@@ -110,8 +110,8 @@ export default function Work() {
                 key={p.id}
                 className={`video-card group relative overflow-hidden bg-white/5 border transition-all duration-500 ${
                   isPlaying
-                    ? 'border-red-500/50 shadow-[0_0_40px_-10px_rgba(239,68,68,0.4)]'
-                    : 'border-white/5 hover:border-red-500/50 hover:shadow-[0_0_40px_-10px_rgba(239,68,68,0.4)]'
+                    ? 'border-red-500/50 shadow-[0_0_40px_-10px_rgba(255,26,26,0.4)]'
+                    : 'border-white/5 hover:border-red-500/50 hover:shadow-[0_0_40px_-10px_rgba(255,26,26,0.4)]'
                 }`}
               >
                 <div className="aspect-[9/16] overflow-hidden relative">

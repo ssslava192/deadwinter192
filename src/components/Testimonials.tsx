@@ -46,7 +46,7 @@ export default function Testimonials() {
           {testimonials.map((t, i) => (
             <div
               key={i}
-              className="reveal group relative p-4 bg-white/[0.02] border border-white/5 hover:border-red-500/50 hover:shadow-[0_0_40px_-10px_rgba(239,68,68,0.4)] transition-all duration-500 flex flex-col"
+              className="reveal group relative p-4 bg-white/[0.02] border border-white/5 hover:border-red-500/50 hover:shadow-[0_0_40px_-10px_rgba(255,26,26,0.4)] transition-all duration-500 flex flex-col"
               style={{ transitionDelay: `${i * 50}ms` }}
             >
               <div className="flex items-center gap-3 mb-3">
