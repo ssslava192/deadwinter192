@@ -6,7 +6,7 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer className="relative py-12 px-6">
+    <footer className="relative py-8 px-6">
       {/* Divider line that fades on both sides */}
       <div
         className="absolute top-0 left-0 right-0 h-px pointer-events-none"
@@ -15,8 +15,8 @@ export default function Footer() {
             'linear-gradient(to right, transparent 0%, rgba(255,255,255,0.12) 50%, transparent 100%)',
         }}
       />
-      <div className="max-w-5xl mx-auto flex flex-col items-center gap-6">
-        <div className="flex flex-wrap justify-center gap-6">
+      <div className="max-w-5xl mx-auto flex flex-col items-center gap-4">
+        <div className="flex flex-wrap justify-center gap-4">
           {socials.map((s) => (
             <a
               key={s.label}

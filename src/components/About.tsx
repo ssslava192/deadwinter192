@@ -9,16 +9,16 @@ const stats = [
 
 export default function About() {
   return (
-    <section id="about" className="relative py-16 px-6">
+    <section id="about" className="relative py-12 px-6">
       <div className="max-w-5xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-6 items-center">
+        <div className="grid md:grid-cols-2 gap-4 items-center">
           {/* Left: Text + Stats */}
           <div className="reveal">
-            <p className="font-sf-italic text-xs tracking-[0.3em] text-red-500/80 uppercase mb-4">
+            <p className="font-sf-italic text-xs tracking-[0.3em] text-white uppercase mb-4">
               01 — Обо мне
             </p>
-            <h2 className="text-8xl md:text-9xl font-bold mb-4 leading-tight font-steelfish">
-              <span className="text-gradient-ice">Вячеслав</span>
+            <h2 className="text-8xl md:text-9xl font-bold mb-3 leading-tight font-steelfish text-red-500">
+              Вячеслав
             </h2>
             <div className="space-y-4 text-slate-400 leading-relaxed font-sf-italic mb-6">
               <p>
@@ -39,7 +39,7 @@ export default function About() {
                     size={20}
                     className="text-red-500/60 mb-3 group-hover:text-red-400 transition-colors"
                   />
-                  <p className="text-6xl font-bold text-white mb-1 font-steelfish">{s.value}</p>
+                  <p className="text-6xl font-bold text-red-500 mb-1 font-steelfish">{s.value}</p>
                   <p className="font-sf-italic text-xs text-slate-500 uppercase tracking-wider">
                     {s.label}
                   </p>

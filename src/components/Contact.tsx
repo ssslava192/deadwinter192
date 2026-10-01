@@ -2,25 +2,25 @@ import { Send } from 'lucide-react';
 
 export default function Contact() {
   return (
-    <section id="contact" className="relative py-16 px-6">
+    <section id="contact" className="relative py-12 px-6">
       <div className="max-w-4xl mx-auto text-center">
         <p
-          className="font-sf-italic text-xs tracking-[0.3em] text-red-500/80 uppercase mb-4 reveal"
+          className="font-sf-italic text-xs tracking-[0.3em] text-white uppercase mb-4 reveal"
         >
           04 — Контакты
         </p>
         <h2
-          className="text-8xl md:text-9xl font-bold mb-4 leading-tight font-steelfish reveal"
+          className="text-8xl md:text-9xl font-bold mb-3 leading-tight font-steelfish text-red-500 reveal"
         >
           Давайте создадим
           <br />
-          что-то <span className="text-gradient-ice">звёздное</span>
+          что-то звёздное
         </h2>
         <p
-          className="font-sf-italic text-slate-400 leading-relaxed mb-8 max-w-md mx-auto reveal"
+          className="font-sf-italic text-slate-400 leading-relaxed mb-6 max-w-md mx-auto reveal"
         >
-          Хочешь <span className="text-red-400 font-semibold not-italic">КОНТЕНТ</span>,
-          который приносит <span className="text-red-400 font-semibold not-italic">РЕЗУЛЬТАТ</span>?
+          Хочешь <span className="font-sf-italic text-[#f87171] uppercase">КОНТЕНТ</span>,
+          который приносит <span className="font-sf-italic text-[#f87171] uppercase">РЕЗУЛЬТАТ</span>?
           Напиши мне в Telegram — обсудим вашу задачу.
         </p>
 
