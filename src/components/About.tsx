@@ -14,13 +14,13 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-4 items-center">
           {/* Left: Text + Stats */}
           <div className="reveal">
-            <p className="font-sf-italic text-xs tracking-[0.3em] text-white uppercase mb-4">
+            <p className="font-sf-italic text-xs tracking-[0.2em] text-slate-300 uppercase mb-4">
               01 — Обо мне
             </p>
             <h2 className="text-8xl md:text-9xl font-bold mb-3 leading-tight font-steelfish text-red-500">
               Вячеслав
             </h2>
-            <div className="space-y-4 text-slate-400 leading-relaxed font-sf-italic mb-6">
+            <div className="space-y-3 text-slate-400 leading-relaxed font-sf-italic mb-4">
               <p>
                 Видеомонтажер, создающий динамичный и трендовый
                 монтаж для ТВОИХ Shorts, Reels и TikTok, который достигает ЦЕЛЕЙ
