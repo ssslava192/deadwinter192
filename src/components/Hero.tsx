@@ -108,7 +108,7 @@ export default function Hero() {
       <div className="relative z-10 max-w-5xl mx-auto w-full">
         <div className="max-w-2xl">
           <p
-            className="font-sf-italic text-sm tracking-[0.25em] text-white uppercase mb-6 animate-fadeInUp flex items-center gap-6"
+            className="font-sf-italic text-sm tracking-[0.25em] text-white uppercase mb-6 animate-fadeInUp flex items-center gap-8"
             style={{ animationDelay: '0.1s', opacity: 0 }}
           >
             <span>Reels</span><span>Shorts</span><span>TikTok</span>

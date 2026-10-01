@@ -19,8 +19,8 @@ export default function Contact() {
         <p
           className="font-sf-italic text-slate-400 leading-relaxed mb-6 max-w-md mx-auto reveal"
         >
-          Хочешь <span className="font-sf-italic text-[#f87171] uppercase">КОНТЕНТ</span>,
-          который приносит <span className="font-sf-italic text-[#f87171] uppercase">РЕЗУЛЬТАТ</span>?
+          Хочешь <span className="font-sf-italic text-slate-400 uppercase">КОНТЕНТ</span>,
+          который приносит <span className="font-sf-italic text-slate-400 uppercase">РЕЗУЛЬТАТ</span>?
           Напиши мне в Telegram — обсудим вашу задачу.
         </p>
 

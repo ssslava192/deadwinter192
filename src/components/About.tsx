@@ -39,7 +39,7 @@ export default function About() {
                     size={20}
                     className="text-red-500/60 mb-3 group-hover:text-red-400 transition-colors"
                   />
-                  <p className="text-6xl font-bold text-red-500 mb-1 font-steelfish">{s.value}</p>
+                  <p className="text-6xl font-bold text-white mb-1 font-steelfish">{s.value}</p>
                   <p className="font-sf-italic text-xs text-slate-500 uppercase tracking-wider">
                     {s.label}
                   </p>
