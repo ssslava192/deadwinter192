@@ -108,7 +108,7 @@ export default function Hero() {
       <div className="relative z-10 max-w-5xl mx-auto w-full">
         <div className="max-w-2xl">
           <p
-            className="font-sf-italic text-sm tracking-[0.2em] text-slate-300 uppercase mb-6 animate-fadeInUp flex items-center gap-4"
+            className="font-sf-italic text-sm tracking-[0.2em] text-slate-400 uppercase mb-6 animate-fadeInUp flex items-center gap-8"
             style={{ animationDelay: '0.1s', opacity: 0 }}
           >
             <span>Reels</span><span>Shorts</span><span>TikTok</span>
@@ -116,7 +116,7 @@ export default function Hero() {
 
           <h1
             className="text-8xl md:text-[11rem] lg:text-[15rem] font-bold leading-none mb-4 animate-fadeInUp font-steelfish"
-            style={{ animationDelay: '0.25s', opacity: 0, letterSpacing: '0.05em' }}
+            style={{ animationDelay: '0.25s', opacity: 0, letterSpacing: '0', transform: 'scaleX(0.95)', transformOrigin: 'left center' }}
           >
             <span className="text-red-500 block">DEADWINTER</span>
           </h1>
@@ -156,7 +156,7 @@ export default function Hero() {
         href="#about"
         className="absolute bottom-8 inset-x-0 z-10 w-full text-center flex flex-col items-center gap-2 text-slate-500 hover:text-slate-300 transition-colors animate-float"
       >
-        <span className="font-sf-italic text-sm md:text-base text-slate-300 tracking-[0.15em] uppercase">
+        <span className="font-sf-italic text-sm md:text-base text-slate-400 tracking-[0.15em] uppercase">
           Не монтаж — а космос
         </span>
         <span className="font-sf-italic text-xs tracking-widest uppercase">Листай</span>

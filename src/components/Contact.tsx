@@ -5,7 +5,7 @@ export default function Contact() {
     <section id="contact" className="relative py-12 px-6">
       <div className="max-w-4xl mx-auto text-center">
         <p
-          className="font-sf-italic text-xs tracking-[0.2em] text-slate-300 uppercase mb-4 reveal"
+          className="font-sf-italic text-xs tracking-[0.2em] text-slate-400 uppercase mb-4 reveal"
         >
           04 — Контакты
         </p>

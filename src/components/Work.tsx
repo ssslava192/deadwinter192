@@ -93,7 +93,7 @@ export default function Work() {
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="mb-4 reveal">
-          <p className="font-sf-italic text-xs tracking-[0.2em] text-slate-300 uppercase mb-4">
+          <p className="font-sf-italic text-xs tracking-[0.2em] text-slate-400 uppercase mb-4">
             02 — Работы
           </p>
           <h2 className="text-8xl md:text-9xl font-bold mb-3 leading-tight font-steelfish text-red-500">

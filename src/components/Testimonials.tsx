@@ -33,7 +33,7 @@ export default function Testimonials() {
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="mb-4 reveal">
-          <p className="font-sf-italic text-xs tracking-[0.2em] text-slate-300 uppercase mb-4">
+          <p className="font-sf-italic text-xs tracking-[0.2em] text-slate-400 uppercase mb-4">
             03 — Отзывы
           </p>
           <h2 className="text-8xl md:text-9xl font-bold mb-3 leading-tight font-steelfish text-red-500">
@@ -61,7 +61,7 @@ export default function Testimonials() {
               </p>
 
               <div className="pt-3 border-t border-white/5">
-                <p className="text-slate-300 text-base font-sf-italic tracking-wide uppercase">
+                <p className="text-slate-400 text-sm font-sf-italic tracking-wide uppercase">
                   {t.role}
                 </p>
               </div>

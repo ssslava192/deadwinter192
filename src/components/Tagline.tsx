@@ -20,7 +20,7 @@ export default function Tagline() {
         </h2>
         <div className="mt-4 flex items-center justify-center gap-3 reveal">
           <span className="h-px w-12 bg-gradient-to-r from-transparent to-red-500/50" />
-          <span className="font-sf-italic text-xs text-slate-300 tracking-[0.2em] uppercase">
+          <span className="font-sf-italic text-xs text-slate-400 tracking-[0.2em] uppercase">
             deadwinter
           </span>
           <span className="h-px w-12 bg-gradient-to-l from-transparent to-red-500/50" />
