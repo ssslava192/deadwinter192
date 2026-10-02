@@ -31,7 +31,7 @@ export default function Footer() {
         </div>
 
         <p className="font-sf-italic text-xs text-slate-600">
-          © {new Date().getFullYear()} · Все права защищены
+          © deadwinter {new Date().getFullYear()} · Все права защищены
         </p>
       </div>
     </footer>

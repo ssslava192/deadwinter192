@@ -4,7 +4,7 @@ const stats = [
   { icon: Film, value: '500+', label: 'ВИДЕО СМОНТИРОВАНО' },
   { icon: Eye, value: '10М+', label: 'Всего просмотров' },
   { icon: TrendingUp, value: '100+', label: 'Клиентов сотрудничали' },
-  { icon: Zap, value: '24ч', label: 'Средняя сдача' },
+  { icon: Zap, value: <>24<span className="text-[0.65em] align-baseline">Ч</span></>, label: 'ВРЕМЯ ВЫПОЛНЕНИЯ' }
 ];
 
 export default function About() {
