@@ -89,7 +89,7 @@ export default function Work() {
   };
 
   return (
-    <section id="work" className="relative py-8 px-6">
+    <section id="work" className="relative pt-20 pb-8 px-6">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="mb-4 reveal">

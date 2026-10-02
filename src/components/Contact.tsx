@@ -2,7 +2,7 @@ import { Send } from 'lucide-react';
 
 export default function Contact() {
   return (
-    <section id="contact" className="relative py-12 px-6">
+    <section id="contact" className="relative pt-20 pb-24 px-6">
       <div className="max-w-4xl mx-auto text-center">
         <p
           className="font-sf-italic text-xs tracking-[0.2em] text-slate-400 uppercase mb-4 reveal"
@@ -17,7 +17,7 @@ export default function Contact() {
           что-то звёздное
         </h2>
         <p
-          className="font-sf-italic text-slate-400 leading-relaxed mb-6 max-w-md mx-auto reveal"
+          className="font-sf-italic text-slate-400 leading-relaxed mb-6 max-w-md mx-auto reveal -translate-y-1"
         >
           Хочешь <span className="font-sf-italic text-slate-400 uppercase">КОНТЕНТ</span>,
           который приносит <span className="font-sf-italic text-slate-400 uppercase">РЕЗУЛЬТАТ</span>?

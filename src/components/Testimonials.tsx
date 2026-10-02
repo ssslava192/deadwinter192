@@ -35,7 +35,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="relative py-8 px-6">
+    <section id="testimonials" className="relative pt-20 pb-8 px-6">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="mb-4 reveal">
@@ -68,8 +68,9 @@ export default function Testimonials() {
 
               <div className="pt-3">
                 <div className="h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent mb-3" />
-                <p className="text-slate-400 text-sm font-sf-italic tracking-wide">
-                  <span>{t.username}</span> {t.role}
+                <p className="text-slate-400 font-sf-italic tracking-wide">
+                  <span className="text-xs text-slate-500 normal-case">{t.username}</span>{' '}
+                  <span className="text-sm text-slate-400 uppercase">{t.role}</span>
                 </p>
               </div>
             </div>

@@ -20,7 +20,7 @@ export default function About() {
             <h2 className="text-8xl md:text-9xl font-bold mb-3 leading-tight font-steelfish text-red-500">
               Вячеслав
             </h2>
-            <div className="space-y-3 text-slate-400 leading-relaxed font-sf-italic mb-4">
+            <div className="space-y-3 text-slate-400 leading-relaxed font-sf-italic mb-4 -translate-y-1">
               <p>
                 Видеомонтажер, создающий динамичный и трендовый
                 монтаж для ТВОИХ Shorts, Reels и TikTok, который достигает ЦЕЛЕЙ
