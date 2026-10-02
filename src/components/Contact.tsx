@@ -21,6 +21,7 @@ export default function Contact() {
         >
           Хочешь <span className="font-sf-italic text-slate-400 uppercase">КОНТЕНТ</span>,
           который приносит <span className="font-sf-italic text-slate-400 uppercase">РЕЗУЛЬТАТ</span>?
+          <br />
           Напиши мне в Telegram — обсудим вашу задачу.
         </p>
 
