@@ -2,27 +2,33 @@ import { Quote } from 'lucide-react';
 
 const testimonials = [
   {
-    role: 'Предприниматель',
+    username: '@olgazotova_psy',
+    role: 'предприниматель',
     text: 'Очень понравилось как сделали монтаж видео, превзошел мои ожидания, а я клиент еще тот придирчивый) Большое спасибо за работу, однозначно рекомендую!',
   },
   {
-    role: 'Криптотрейдер',
+    username: '@stas_haker',
+    role: 'криптотрейдер',
     text: 'Вячеслав максимально быстро смонтировал мне интересный Reels! Очень порадовало, что он отвечает моментально — ничего не пришлось ждать.',
   },
   {
-    role: 'Бренд одежды',
+    username: '@polinapilia',
+    role: 'бренд одежды',
     text: 'Нужно было смонтировать короткие вертикальные видео для социальных сетей на основе референсов. Работа понравилась, ролики были смонтированы очень быстро и качественно.',
   },
   {
-    role: 'Маркетолог',
+    username: '@sergeykudryavtsevSEO',
+    role: 'маркетолог',
     text: 'Хотел бы поблагодарить Вячеслава за хорошую работу на протяжении длительного периода. Хорошо монтировал, предлагал идеи, оперативно вносил правки и всегда был на связи.',
   },
   {
-    role: 'Риелтор',
+    username: '@mikroElik',
+    role: 'риелтор',
     text: 'Всё сделал даже раньше дедлайна, получилось увидеть то, что именно хотела видеть! Получение обратной связи в любое время суток, очень приятно было работать. Спасибо большое!',
   },
   {
-    role: 'Врач',
+    username: '@dok_tor_eliseev',
+    role: 'врач',
     text: 'Спасибо большое за качественную работу и профессиональный подход! Однозначно рекомендую) Вячеслав, спасибо за ваш подход и ваш взгляд на монтаж роликов для рилсов, очень круто!',
   },
 ];
@@ -60,9 +66,10 @@ export default function Testimonials() {
                 {t.text}
               </p>
 
-              <div className="pt-3 border-t border-white/5">
-                <p className="text-slate-400 text-sm font-sf-italic tracking-wide uppercase">
-                  {t.role}
+              <div className="pt-3">
+                <div className="h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent mb-3" />
+                <p className="text-slate-400 text-sm font-sf-italic tracking-wide">
+                  <span>{t.username}</span> {t.role}
                 </p>
               </div>
             </div>

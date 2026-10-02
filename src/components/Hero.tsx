@@ -135,7 +135,7 @@ export default function Hero() {
           >
             <a
               href="#work"
-              className="group inline-flex items-center gap-2 px-7 py-3 bg-white text-black text-sm font-semibold tracking-wide hover:bg-red-300 transition-colors duration-300"
+              className="group inline-flex items-center gap-2 px-7 py-3 bg-white text-black text-sm font-semibold tracking-wide hover:bg-red-500 hover:text-white active:bg-red-500 active:text-white transition-colors duration-300"
             >
               Мои работы
             </a>

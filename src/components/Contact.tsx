@@ -10,7 +10,7 @@ export default function Contact() {
           04 — Контакты
         </p>
         <h2
-          className="text-8xl md:text-9xl font-bold mb-3 leading-tight font-steelfish text-red-500 reveal"
+          className="text-8xl md:text-9xl font-bold mb-3 leading-none font-steelfish text-red-500 reveal"
         >
           Давайте создадим
           <br />
@@ -30,7 +30,7 @@ export default function Contact() {
             href="https://t.me/deadwinter192"
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center gap-2 px-8 py-4 bg-white text-black text-sm font-semibold tracking-wide hover:bg-red-300 transition-colors duration-300"
+            className="group inline-flex items-center gap-2 px-8 py-4 bg-white text-black text-sm font-semibold tracking-wide hover:bg-red-500 hover:text-white active:bg-red-500 active:text-white transition-colors duration-300"
           >
             Связаться
             <Send size={16} className="group-hover:translate-x-1 transition-transform" />
