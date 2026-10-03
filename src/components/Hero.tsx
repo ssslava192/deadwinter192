@@ -115,14 +115,15 @@ export default function Hero() {
           </p>
 
           <h1
-            className="text-9xl md:text-[12rem] lg:text-[16rem] font-bold leading-none mb-4 animate-fadeInUp font-steelfish"
+            className="text-7xl md:text-9xl lg:text-[11rem] font-bold leading-[0.84] mb-4 animate-fadeInUp font-steelfish"
             style={{ animationDelay: '0.25s', opacity: 0, letterSpacing: '0', transform: 'scaleX(0.95)', transformOrigin: 'left center' }}
           >
-            <span className="text-red-500 block">DEADWINTER</span>
+            <span className="text-red-500 block">НЕ МОНТАЖ — А</span>
+            <span className="text-red-500 block">КОСМОС</span>
           </h1>
 
           <p
-            className="font-sf-italic text-slate-400 text-lg md:text-xl leading-relaxed max-w-lg mb-4 animate-fadeInUp"
+            className="font-sf-italic text-slate-400 text-lg md:text-xl leading-relaxed max-w-lg mb-4 animate-fadeInUp -translate-y-1"
             style={{ animationDelay: '0.4s', opacity: 0 }}
           >
             Создаю вертикальные видео, которые останавливают скролл. Reels,
@@ -156,9 +157,6 @@ export default function Hero() {
         href="#about"
         className="absolute bottom-8 inset-x-0 z-10 w-full text-center flex flex-col items-center gap-2 text-slate-500 hover:text-slate-300 transition-colors animate-float"
       >
-        <span className="font-sf-italic text-sm md:text-base text-slate-400 tracking-[0.15em] uppercase">
-          Не монтаж — а космос
-        </span>
         <span className="font-sf-italic text-xs tracking-widest uppercase">Листай</span>
         <ChevronDown size={16} />
       </a>
