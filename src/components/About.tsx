@@ -4,7 +4,7 @@ const stats = [
   { icon: Film, value: '500+', label: 'ВИДЕО СМОНТИРОВАНО' },
   { icon: Eye, value: <>10<span className="text-[0.78em] align-baseline">М</span>+</>, label: 'Всего просмотров' },
   { icon: TrendingUp, value: '100+', label: 'Клиентов сотрудничали' },
-  { icon: Zap, value: <>24<span className="text-[0.65em] align-baseline">Ч</span></>, label: 'ВРЕМЯ ВЫПОЛНЕНИЯ' }
+  { icon: Zap, value: <>24<span className="text-[0.78em] align-baseline">Ч</span></>, label: 'ВРЕМЯ ВЫПОЛНЕНИЯ' }
 ];
 
 export default function About() {
@@ -17,7 +17,7 @@ export default function About() {
             <p className="font-sf-italic text-xs tracking-[0.2em] text-slate-400 uppercase mb-4">
               01 — Обо мне
             </p>
-            <h2 className="text-8xl md:text-9xl font-bold mb-3 leading-tight font-steelfish text-red-500">
+            <h2 className="heading-display text-8xl md:text-9xl font-bold mb-3 leading-tight font-steelfish">
               Вячеслав
             </h2>
             <div className="space-y-3 text-slate-400 leading-relaxed font-sf-italic mb-4 -translate-y-1">

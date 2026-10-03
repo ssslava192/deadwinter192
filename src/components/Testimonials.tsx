@@ -42,7 +42,7 @@ export default function Testimonials() {
           <p className="font-sf-italic text-xs tracking-[0.2em] text-slate-400 uppercase mb-4">
             03 — Отзывы
           </p>
-          <h2 className="text-8xl md:text-9xl font-bold mb-3 leading-tight font-steelfish text-red-500">
+          <h2 className="heading-display text-8xl md:text-9xl font-bold mb-3 leading-tight font-steelfish">
             Отзывы клиентов
           </h2>
         </div>
@@ -69,8 +69,8 @@ export default function Testimonials() {
               <div className="pt-3">
                 <div className="h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent mb-3" />
                 <p className="text-slate-400 font-sf-italic tracking-wide">
-                  <span className="text-xs text-slate-500 normal-case">{t.username}</span>{' '}
-                  <span className="text-sm text-slate-400 uppercase">{t.role}</span>
+                  <span className="text-[clamp(1.15rem,2.5vw,1.5rem)] text-slate-400 normal-case break-words">{t.username}</span>{' '}
+                  <span className="text-[clamp(1rem,2vw,1.2rem)] text-slate-400 uppercase break-words">{t.role}</span>
                 </p>
               </div>
             </div>
