@@ -115,11 +115,11 @@ export default function Hero() {
           </p>
 
           <h1
-            className="heading-display text-7xl md:text-9xl lg:text-[11rem] font-bold leading-[0.84] mb-4 animate-fadeInUp font-steelfish"
+            className="text-7xl md:text-9xl lg:text-[11rem] font-bold leading-[0.84] mb-4 animate-fadeInUp font-steelfish"
             style={{ animationDelay: '0.25s', opacity: 0, letterSpacing: '0', transform: 'scaleX(0.95)', transformOrigin: 'left center' }}
           >
-            <span className="block">НЕ МОНТАЖ</span>
-            <span className="block">А КОСМОС</span>
+            <span className="text-red-500 block">НЕ МОНТАЖ</span>
+            <span className="text-red-500 block">А КОСМОС</span>
           </h1>
 
           <p

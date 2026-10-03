@@ -62,15 +62,6 @@
     font-style: italic;
   }
 
-  .heading-display {
-    background: linear-gradient(180deg, #ff7078 0%, #f21f32 45%, #98000d 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    -webkit-text-stroke: 0.5px rgba(255, 95, 105, 0.25);
-    text-shadow: 1px 0 rgba(63, 214, 255, 0.22), -1px 0 rgba(255, 20, 50, 0.26), 0 0 18px rgba(255, 25, 50, 0.42), 0 0 42px rgba(255, 25, 50, 0.16);
-  }
-
   .text-gradient {
     background: linear-gradient(135deg, #e2e8f0 0%, #94a3b8 50%, #64748b 100%);
     -webkit-background-clip: text;
