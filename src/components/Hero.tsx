@@ -115,15 +115,15 @@ export default function Hero() {
           </p>
 
           <h1
-            className="text-7xl md:text-9xl lg:text-[11rem] font-bold leading-[0.84] mb-4 animate-fadeInUp font-steelfish"
+            className="heading-display text-8xl md:text-[11rem] lg:text-[15rem] font-bold leading-[0.7] mb-3 animate-fadeInUp font-steelfish"
             style={{ animationDelay: '0.25s', opacity: 0, letterSpacing: '0', transform: 'scaleX(0.95)', transformOrigin: 'left center' }}
           >
-            <span className="text-red-500 block">НЕ МОНТАЖ</span>
-            <span className="text-red-500 block">А КОСМОС</span>
+            <span className="block">НЕ МОНТАЖ</span>
+            <span className="block">А КОСМОС</span>
           </h1>
 
           <p
-            className="font-sf-italic text-slate-400 text-lg md:text-xl leading-relaxed max-w-lg mb-4 animate-fadeInUp -translate-y-1"
+            className="font-sf-italic text-slate-400 text-lg md:text-xl leading-relaxed max-w-lg mb-4 animate-fadeInUp -translate-y-3"
             style={{ animationDelay: '0.4s', opacity: 0 }}
           >
             Создаю вертикальные видео, которые останавливают скролл. Reels,
