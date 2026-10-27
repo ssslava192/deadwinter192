@@ -49,8 +49,8 @@ export default function About() {
           </div>
 
           {/* Right: Photo */}
-          <div className="reveal flex justify-center md:justify-end">
-            <div className="relative w-[24rem] md:w-[34rem] lg:w-[38rem] -my-8 md:-my-12">
+          <div className="reveal flex w-full justify-center md:justify-end">
+            <div className="relative w-full max-w-[30rem] md:max-w-[36rem] lg:max-w-[42rem]">
               <div className="absolute inset-x-[18%] top-[8%] h-[52%] rounded-full bg-red-500/35 blur-[70px] pointer-events-none" />
               <div className="absolute inset-x-[8%] top-[28%] bottom-[10%] rounded-full bg-red-500/15 blur-[90px] pointer-events-none" />
               <img

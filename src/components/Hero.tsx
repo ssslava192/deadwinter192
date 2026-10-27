@@ -105,7 +105,7 @@ export default function Hero() {
       />
 
       {/* Content */}
-      <div className="relative z-10 max-w-5xl mx-auto w-full">
+      <div className="relative z-10 max-w-5xl mx-auto w-full px-6 md:px-0">
         <div className="max-w-2xl">
           <p
             className="font-sf-italic text-sm tracking-[0.2em] text-slate-400 uppercase mb-6 animate-fadeInUp flex items-center gap-8"
@@ -115,11 +115,11 @@ export default function Hero() {
           </p>
 
           <h1
-            className="heading-display text-7xl md:text-[9.5rem] lg:text-[13rem] font-bold leading-[0.76] mb-2 animate-fadeInUp font-sf-italic overflow-visible"
+            className="heading-display text-7xl md:text-[10rem] lg:text-[13rem] font-bold leading-[0.72] mb-2 animate-fadeInUp font-steelfish overflow-visible"
             style={{ animationDelay: '0.25s', opacity: 0, letterSpacing: '0', transform: 'scaleX(0.95)', transformOrigin: 'left center' }}
           >
-            <span className="block whitespace-nowrap origin-left scale-x-[0.84]">НЕ МОНТАЖ,</span>
-            <span className="block whitespace-nowrap origin-left scale-x-[1.02]">А КОСМОС</span>
+            <span className="block whitespace-nowrap">НЕ МОНТАЖ,</span>
+            <span className="block whitespace-nowrap">А КОСМОС</span>
           </h1>
 
           <p
@@ -136,7 +136,7 @@ export default function Hero() {
           >
             <a
               href="#work"
-              className="group inline-flex items-center gap-2 px-7 py-3 bg-white text-black text-sm font-semibold tracking-wide hover:bg-red-500 hover:text-white active:bg-red-500 active:text-white transition-colors duration-300"
+              className="group inline-flex items-center gap-2 px-7 py-3 bg-white text-black text-sm font-semibold tracking-wide hover:bg-red-500 hover:text-white hover:shadow-[0_0_34px_rgba(255,26,26,0.8),0_0_78px_rgba(255,26,26,0.45)] active:bg-red-500 active:text-white transition-all duration-300"
             >
               Мои работы
             </a>
@@ -144,7 +144,7 @@ export default function Hero() {
               href="https://t.me/deadwinter192"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-7 py-3 border border-white/20 text-white text-sm font-medium tracking-wide hover:border-red-500 hover:text-red-400 hover:shadow-[0_0_24px_rgba(255,26,26,0.65),0_0_52px_rgba(255,26,26,0.3)] transition-all duration-300"
+              className="inline-flex items-center gap-2 px-7 py-3 border border-white/20 text-white text-sm font-medium tracking-wide hover:border-red-500 hover:text-red-400 hover:shadow-[0_0_34px_rgba(255,26,26,0.8),0_0_78px_rgba(255,26,26,0.45)] transition-all duration-300"
             >
               Связаться
             </a>

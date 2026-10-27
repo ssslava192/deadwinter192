@@ -77,7 +77,7 @@ const projects: Project[] = [
     image:
       'https://images.pexels.com/photos/2703202/pexels-photo-2703202.jpeg?auto=compress&cs=tinysrgb&w=600',
     tags: ['Матч-каты', 'Фэшн', 'Дропы бита'],
-    video: 'https://cdn.coverr.co/videos/coverr-a-woman-walking-in-the-city-1080p.mp4',
+    video: 'https://drive.google.com/uc?export=download&id=1sxhGc3Nb0c5p9FdXacJQKNO0V8AZtu83',
   },
 ];
 
