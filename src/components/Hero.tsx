@@ -115,15 +115,15 @@ export default function Hero() {
           </p>
 
           <h1
-            className="heading-display text-8xl md:text-[11rem] lg:text-[15rem] font-bold leading-[0.7] mb-3 animate-fadeInUp font-steelfish"
+            className="heading-display text-7xl md:text-[9.5rem] lg:text-[13rem] font-bold leading-[0.76] mb-2 animate-fadeInUp font-sf-italic overflow-visible"
             style={{ animationDelay: '0.25s', opacity: 0, letterSpacing: '0', transform: 'scaleX(0.95)', transformOrigin: 'left center' }}
           >
-            <span className="block">НЕ МОНТАЖ</span>
-            <span className="block">А КОСМОС</span>
+            <span className="block whitespace-nowrap origin-left scale-x-[0.84]">НЕ МОНТАЖ,</span>
+            <span className="block whitespace-nowrap origin-left scale-x-[1.02]">А КОСМОС</span>
           </h1>
 
           <p
-            className="font-sf-italic text-slate-400 text-lg md:text-xl leading-relaxed max-w-lg mb-4 animate-fadeInUp -translate-y-3"
+            className="font-sf-italic text-slate-400 text-lg md:text-xl leading-relaxed max-w-lg mb-4 animate-fadeInUp"
             style={{ animationDelay: '0.4s', opacity: 0 }}
           >
             Создаю вертикальные видео, которые останавливают скролл. Reels,
@@ -144,7 +144,7 @@ export default function Hero() {
               href="https://t.me/deadwinter192"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-7 py-3 border border-white/20 text-white text-sm font-medium tracking-wide hover:border-red-500/50 hover:text-red-400 transition-all duration-300"
+              className="inline-flex items-center gap-2 px-7 py-3 border border-white/20 text-white text-sm font-medium tracking-wide hover:border-red-500 hover:text-red-400 hover:shadow-[0_0_24px_rgba(255,26,26,0.65),0_0_52px_rgba(255,26,26,0.3)] transition-all duration-300"
             >
               Связаться
             </a>

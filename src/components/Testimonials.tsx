@@ -35,14 +35,14 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="relative pt-20 pb-8 px-6">
+    <section id="testimonials" className="relative pt-12 pb-8 px-6">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
-        <div className="mb-4 reveal">
+        <div className="mb-2 reveal">
           <p className="font-sf-italic text-xs tracking-[0.2em] text-slate-400 uppercase mb-4">
             03 — Отзывы
           </p>
-          <h2 className="heading-display text-8xl md:text-9xl font-bold mb-3 leading-tight font-steelfish">
+          <h2 className="heading-display text-8xl md:text-9xl font-bold mb-1 leading-tight font-steelfish">
             Отзывы клиентов
           </h2>
         </div>
@@ -52,7 +52,7 @@ export default function Testimonials() {
           {testimonials.map((t, i) => (
             <div
               key={i}
-              className="reveal group relative p-4 bg-white/[0.02] border border-white/5 hover:border-red-500/50 hover:shadow-[0_0_40px_-10px_rgba(255,22,56,0.4)] transition-all duration-500 flex flex-col"
+              className="reveal group relative p-4 bg-white/[0.02] border border-white/25 hover:border-red-500 hover:shadow-[0_0_55px_-8px_rgba(255,22,56,0.85),0_0_95px_-16px_rgba(255,22,56,0.55)] transition-all duration-500 flex flex-col"
               style={{ transitionDelay: `${i * 50}ms` }}
             >
               <div className="flex items-center gap-3 mb-3">

@@ -9,7 +9,7 @@ const stats = [
 
 export default function About() {
   return (
-    <section id="about" className="relative py-12 px-6">
+    <section id="about" className="relative py-8 px-6">
       <div className="max-w-5xl mx-auto">
         <div className="grid md:grid-cols-2 gap-4 items-center">
           {/* Left: Text + Stats */}
@@ -17,10 +17,10 @@ export default function About() {
             <p className="font-sf-italic text-xs tracking-[0.2em] text-slate-400 uppercase mb-4">
               01 — Обо мне
             </p>
-            <h2 className="heading-display text-8xl md:text-9xl font-bold mb-3 leading-tight font-steelfish">
+            <h2 className="heading-display text-8xl md:text-9xl font-bold mb-1 leading-tight font-steelfish">
               Вячеслав
             </h2>
-            <div className="space-y-3 text-slate-400 leading-relaxed font-sf-italic mb-4 -translate-y-1">
+            <div className="space-y-3 text-slate-400 leading-relaxed font-sf-italic mb-4">
               <p>
                 Видеомонтажер, создающий динамичный и трендовый
                 монтаж для ТВОИХ Shorts, Reels и TikTok, который достигает ЦЕЛЕЙ
@@ -40,7 +40,7 @@ export default function About() {
                     className="text-red-500/60 mb-3 group-hover:text-red-400 transition-colors"
                   />
                   <p className="text-6xl font-bold text-white mb-1 font-steelfish">{s.value}</p>
-                  <p className="font-sf-italic text-xs text-slate-500 uppercase tracking-wider">
+                  <p className="font-sf-italic text-xs text-white uppercase tracking-wider">
                     {s.label}
                   </p>
                 </div>
@@ -49,26 +49,15 @@ export default function About() {
           </div>
 
           {/* Right: Photo */}
-          <div className="reveal flex justify-center">
-            <div className="relative w-80 md:w-96">
-              {/* Glow behind */}
-              <div className="absolute inset-0 bg-red-500/20 blur-3xl rounded-full scale-110 pointer-events-none" />
-              <div className="absolute inset-x-8 top-8 bottom-16 bg-white/10 blur-3xl rounded-full pointer-events-none" />
-              {/* Border frame */}
-              <div className="relative border border-white/10 overflow-hidden">
-                <img
-                  src="/assets/images/photo_2026-07-18_03-42-38.jpg"
-                  alt="Вячеслав"
-                  className="w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-700 drop-shadow-[0_0_28px_rgba(255,255,255,0.16)]"
-                />
-                {/* Bottom overlay */}
-                <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black via-black/65 to-transparent pointer-events-none" />
-              </div>
-              {/* Corner accents */}
-              <div className="absolute top-0 left-0 w-5 h-5 border-t-2 border-l-2 border-red-500/60 -translate-x-1 -translate-y-1" />
-              <div className="absolute top-0 right-0 w-5 h-5 border-t-2 border-r-2 border-red-500/60 translate-x-1 -translate-y-1" />
-              <div className="absolute bottom-0 left-0 w-5 h-5 border-b-2 border-l-2 border-red-500/60 -translate-x-1 translate-y-1" />
-              <div className="absolute bottom-0 right-0 w-5 h-5 border-b-2 border-r-2 border-red-500/60 translate-x-1 translate-y-1" />
+          <div className="reveal flex justify-center md:justify-end">
+            <div className="relative w-[24rem] md:w-[34rem] lg:w-[38rem] -my-8 md:-my-12">
+              <div className="absolute inset-x-[18%] top-[8%] h-[52%] rounded-full bg-red-500/35 blur-[70px] pointer-events-none" />
+              <div className="absolute inset-x-[8%] top-[28%] bottom-[10%] rounded-full bg-red-500/15 blur-[90px] pointer-events-none" />
+              <img
+                src="/assets/images/Моя_фотка.png"
+                alt="Вячеслав"
+                className="relative z-10 w-full h-auto object-contain drop-shadow-[0_0_28px_rgba(255,26,26,0.28)]"
+              />
             </div>
           </div>
         </div>

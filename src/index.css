@@ -180,6 +180,10 @@
   opacity: 1;
 }
 
+.video-card:hover {
+  box-shadow: 0 0 55px -8px rgba(255, 22, 56, 0.8), 0 0 95px -16px rgba(255, 22, 56, 0.55);
+}
+
 .video-card:hover .card-image {
   transform: scale(1.05);
 }

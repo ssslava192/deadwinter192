@@ -2,7 +2,7 @@ import { Send } from 'lucide-react';
 
 export default function Contact() {
   return (
-    <section id="contact" className="relative pt-20 pb-24 px-6">
+    <section id="contact" className="relative pt-12 pb-20 px-6">
       <div className="max-w-4xl mx-auto text-center">
         <p
           className="font-sf-italic text-xs tracking-[0.2em] text-slate-400 uppercase mb-4 reveal"
@@ -10,14 +10,14 @@ export default function Contact() {
           04 — Контакты
         </p>
         <h2
-          className="heading-display text-8xl md:text-9xl font-bold mb-3 leading-none font-steelfish reveal"
+          className="heading-display text-8xl md:text-9xl font-bold mb-2 leading-[0.82] font-steelfish reveal"
         >
           Давайте создадим
           <br />
           что-то звёздное
         </h2>
         <p
-          className="font-sf-italic text-slate-400 leading-relaxed mb-6 max-w-md mx-auto reveal -translate-y-1"
+          className="font-sf-italic text-slate-400 leading-relaxed mb-6 max-w-md mx-auto reveal"
         >
           Хочешь <span className="font-sf-italic text-slate-400 uppercase">КОНТЕНТ</span>,
           который приносит <span className="font-sf-italic text-slate-400 uppercase">РЕЗУЛЬТАТ</span>?
@@ -30,7 +30,7 @@ export default function Contact() {
             href="https://t.me/deadwinter192"
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center gap-2 px-8 py-4 bg-white text-black text-sm font-semibold tracking-wide hover:bg-red-500 hover:text-white active:bg-red-500 active:text-white transition-colors duration-300"
+            className="group inline-flex items-center gap-2 px-8 py-4 bg-white text-black text-sm font-semibold tracking-wide hover:bg-red-500 hover:text-white hover:shadow-[0_0_24px_rgba(255,26,26,0.65),0_0_52px_rgba(255,26,26,0.3)] active:bg-red-500 active:text-white transition-all duration-300"
           >
             Связаться
             <Send size={16} className="group-hover:translate-x-1 transition-transform" />
